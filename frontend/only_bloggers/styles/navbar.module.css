@@ -1,0 +1,38 @@
+#navigation{
+    display: flex;
+     background-color: black;
+     color: white;
+     justify-content: space-between;
+    /* position: fixed;
+    width: 100%;
+    top:0; */
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+   
+}
+#navImage{
+   margin: 10px 50px;
+   align-self: center;
+   font-weight: bolder;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: larger;
+   }
+#list{
+    display: flex;
+     list-style-type: none;
+    margin: 10px 60px;
+    align-content: center;
+}
+.listItem{
+ margin: 8px 20px;
+ align-self: center;
+}
+.listItem button{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 20px
+}

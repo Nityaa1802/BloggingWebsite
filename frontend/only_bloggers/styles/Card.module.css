@@ -1,0 +1,80 @@
+.inner{
+    border: 1px solid rgba(128, 128, 128, 0.211);
+    background-color: white;
+    width: 300px;
+    box-shadow: 3px 3px 2px #88888869;
+margin: 2rem 0.5rem;
+transition: transform .3s;
+}
+.inner:hover{
+    transform: scale(1.05);
+
+
+}
+
+.cardImage{
+    /* height: 140px; */
+    width: 300px;
+    
+}
+
+.domainHeading{
+    opacity: 0.7;
+    margin: 0.25rem 0rem;
+    font-size: small;
+}
+.details{
+    padding: 0.5rem 1rem;
+}
+.projectName{
+    font-size: larger;
+    padding-bottom: 0.25rem;
+    font-weight: bolder;
+
+}
+.projectDetails{
+    opacity: 0.8;
+    font-size: small;
+    line-height: 1.2;
+}
+.readMoreButton{
+    color: blue;
+    font-size: smaller;
+    margin: 0.5rem 0rem;
+    padding:0.3rem 0.5rem ;
+   
+
+}
+.readMoreButton:hover{
+    background-color: rgb(176, 212, 224);
+    border: 40px rgba(0, 0, 255, 0.677);
+    
+
+    border-radius: 25px;
+}
+
+.hr{
+    border: none;
+    height: 0.5px;
+
+    background-color:rgba(128, 128, 128, 0.575);   
+  }
+  .date{
+    opacity: 0.8;
+    font-size: small;
+
+    margin: 0.5rem 0rem;
+    letter-spacing: 1px;
+  }
+  
+  .ButtonProject{
+    color: blue;
+    font-size: smaller;
+    margin: 0.1rem 0rem;
+    padding:0.6rem 0.5rem ;
+    border-radius: 10px;
+   
+  }
+  .ButtonProject:hover{
+    background-color: #F8C828;
+  }
