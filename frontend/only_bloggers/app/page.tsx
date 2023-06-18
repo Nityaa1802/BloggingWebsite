@@ -5,7 +5,10 @@ import AllCards from '@/components/HorizontalCards'
 import Carousel from '@/components/Carousel'
 import MostLikedPost from '@/components/MostLikedPost'
 
+
 export default function Home() {
+ 
+
   return (
     <div>
        <div id={styles.main}>
@@ -15,7 +18,7 @@ export default function Home() {
         </div>
        
       <div id={styles.mostLiked}>
-      <h2 className={styles.heading}>Most Popular</h2>
+          <h2 className={styles.heading}>Most Popular</h2>
         <MostLikedPost/>
 
         </div>
@@ -35,3 +38,11 @@ export default function Home() {
     
   )
 }
+// export async function getServerSideProps(context:any) {
+//   console.log("hii");
+//   return {
+//     props: {
+//       user:"users"
+//     }
+//   }
+// }
