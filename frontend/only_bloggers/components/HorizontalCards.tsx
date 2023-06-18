@@ -1,7 +1,20 @@
 import React from 'react'
 import styles from '../styles/HorizontalCard.module.css'
 
-const HorizontalCards = () => {
+
+export   const AllCards = () => {
+    const objects=[1,2,3,4,5,6,7,8,9,10,11,12];
+return (
+  <div >
+     <div className={styles.main1}>
+  
+  {objects.map(i => { return (<HorizontalCards key={i} />) })}
+   </div>
+ </div>)
+}
+
+
+export  const HorizontalCards = () => {
   return (
       <div id={styles.main}>
          
@@ -18,4 +31,4 @@ const HorizontalCards = () => {
   )
 }
 
-export default HorizontalCards
+export default AllCards;

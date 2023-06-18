@@ -1,6 +1,7 @@
+
 import Image from 'next/image'
 import styles from './page.module.css'
-import AllCards from '@/components/AllCards'
+import AllCards from '@/components/HorizontalCards'
 import Carousel from '@/components/Carousel'
 import MostLikedPost from '@/components/MostLikedPost'
 

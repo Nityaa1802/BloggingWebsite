@@ -1,10 +1,12 @@
+
 import React from 'react'
 import styles from '../styles/navbar.module.css'
-import { url } from 'inspector'
-import { resolve } from 'path'
-import Image from 'next/image'
-import navImage from '../public/OnlyBloggers.png'
+
+import Link from 'next/link'
+
+
 const Navbar = () => {
+ 
   return (
       <>
         <nav id={styles.navigation}>
@@ -12,14 +14,15 @@ const Navbar = () => {
              
               <div >
                   <ul id={styles.list}>
-                      <li className={styles.listItem}>Home</li>
-                      <li className={styles.listItem}> Create Post</li>
-                      <li className={styles.listItem}>My Post</li>
-                      <li className={styles.listItem}><button>Sign In</button></li>
+                      <li className={styles.listItem}><Link  className={styles.link}href={"/"}>Home</Link></li>
+                      <li className={styles.listItem}><Link className={styles.link}href={"createPost"}>CreatePost</Link></li>
+                      <li className={styles.listItem}><Link className={styles.link}href={"myProfile"}>My Profile</Link></li>
+                      <li className={styles.listItem}><button >Sign In</button></li>
                   </ul>
               </div>
       </nav>
-          
+   
+       
       
       </>
   )
