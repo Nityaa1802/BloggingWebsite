@@ -4,8 +4,8 @@
      color: white;
      justify-content: space-between;
     /* position: fixed;
-    width: 100%;
-    top:0; */
+    width: 100%; */
+    top:0;
     overflow: hidden;
     margin-bottom: 10px;
     
@@ -28,11 +28,17 @@
 .listItem{
  margin: 8px 20px;
  align-self: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: larger;
+}
+.listItem:hover{
+text-decoration: underline;
+
 }
 .listItem button{
     background-color: black;
     color: white;
     border: 2px solid white;
     padding: 8px 15px;
-    border-radius: 20px
+    border-radius: 10px
 }

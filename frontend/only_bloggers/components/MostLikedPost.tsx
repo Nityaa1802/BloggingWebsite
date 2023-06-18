@@ -6,13 +6,6 @@ const MostLikedPost = () => {
         spacing: 8,
       }
     return (
-    
-
-  
-
-
-      
-  
      <div id={styles.main}>
   
             {objects.map(i => { return (<><Section key={i} />  <hr id={styles.horizontalLine} /></>) })}

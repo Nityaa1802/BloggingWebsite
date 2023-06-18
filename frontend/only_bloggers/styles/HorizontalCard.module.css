@@ -1,0 +1,39 @@
+#main{
+    width: 27rem;
+    height: 12rem;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 1rem;
+    justify-content: space-between;
+   transition: 0.3s;
+   
+}
+#main:hover{
+   transform: scale(1.05)
+}
+
+#image{
+    height: 100%;
+    width: 40%;
+    border-radius: 15px 0px 0px 15px;
+}
+#text{
+    width: 57%;
+    padding: 0.75rem ;
+
+
+}
+#text h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0.1rem 0rem;
+     font-weight:normal;
+
+}
+#text p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    opacity: 0.7;
+    margin: 0.7rem 0rem;
+   
+}

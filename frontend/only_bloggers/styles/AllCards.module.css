@@ -3,6 +3,6 @@
     grid-template-columns:1fr 1fr 1fr;
     /* gap: 1rem 1rem; */
     justify-content: center;
-    margin:2rem 11rem;
+    margin:2rem 10px;
     justify-items: center;
    }
