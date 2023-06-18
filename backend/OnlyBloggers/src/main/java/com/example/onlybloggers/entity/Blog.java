@@ -27,4 +27,6 @@ public class Blog {
     private String author;
     @Column
     private String img;
+    @Column
+    private  int likes;
 }
