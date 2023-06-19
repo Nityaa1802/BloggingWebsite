@@ -49,4 +49,9 @@ public class BlogController {
         List<Blog> blogList=blogService.getBlogsByAuthor(author);
         return ResponseEntity.ok(blogList);
         }
+//        @GetMapping("/mostPopular")
+//    public List<Blog> getBlogsByList(@RequestParam("pageNumber") int pageNumber,@RequestParam("pageSize") int pageSize){
+//        List<Blog> blogList=blogService.getBlogbyLikes(pageNumber,pageSize);
+//        return blogList;
+//        }
     }

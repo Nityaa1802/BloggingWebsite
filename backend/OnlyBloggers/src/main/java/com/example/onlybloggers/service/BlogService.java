@@ -14,4 +14,6 @@ public interface BlogService {
     public void deleteBlog(long bloId);
 
     public List<Blog> getBlogsByAuthor(String author);
+
+//    public  List<Blog> getBlogbyLikes(int pageNumber,int pageSize);
 }

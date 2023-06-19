@@ -5,6 +5,10 @@ import com.example.onlybloggers.entity.Blog;
 import com.example.onlybloggers.service.BlogService;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -49,5 +53,12 @@ public class BlogServiceImpl implements BlogService {
         return blogList;
     }
 
-
+//    @Override
+//    public List<Blog> getBlogbyLikes(int pageNumber, int pageSize) {
+//
+//        Pageable pageable= PageRequest.of(pageNumber,pageSize,Sort.by("likes").descending());
+//        Page<Blog> page=blogRepo.getBlogByLikes(pageable);
+//        List<Blog> blogList=page.getContent();
+//        return blogList;
+//    }
 }
