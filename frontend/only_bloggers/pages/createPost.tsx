@@ -127,9 +127,7 @@ const CreatePost = () => {
       <Button onClick={()=>{router.replace('/')}}>Cancel</Button>
       <Button onClick={submitHandler}>Submit</Button>
       </DialogActions>
-      <div>
-  
-      </div>
+     
      
 
   </Dialog></div>
