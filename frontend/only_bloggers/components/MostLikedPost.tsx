@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/MostLikedPost.module.css'
+import BlogPage from './blogPage';
 const MostLikedPost = () => {
     const objects = [1, 2, 3,4];
     const theme = {
@@ -18,9 +19,18 @@ const MostLikedPost = () => {
 }
 
 export const Section = () => {
+    const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
     return (
         <>
-            <div id={styles.section}>
+            <div id={styles.section}  onClick={handleClickOpen}>
 
                 <img src="https://images.pexels.com/photos/6401669/pexels-photo-6401669.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id={styles.sectionImage} />
                 
@@ -29,7 +39,7 @@ export const Section = () => {
                     <p>By: Nityaa | 24 August,2023</p>
                 </div>
             </div>
-         
+            <BlogPage handleClose={ handleClose} open={open} />
         </>
     )
 }

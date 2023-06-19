@@ -1,8 +1,18 @@
 import React from 'react'
 import styles from '../styles/Card.module.css'
+import BlogPage from './blogPage';
 const Card = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
-   <li> <div className={styles.inner}>
+   <li> <div className={styles.inner} onClick={handleClickOpen}>
    <img src="https://www.projectwale.com/wp-content/uploads/2020/05/artificial-intelligence-1024x576.jpg" className={styles.cardImage} />
 
    <div className={[styles.details].join("August 27,2022")}>
@@ -17,7 +27,8 @@ const Card = () => {
    </div>     
    
  
- </div></li>
+    </div>
+    <BlogPage handleClose={ handleClose} open={open} /></li>
   )
 }
 

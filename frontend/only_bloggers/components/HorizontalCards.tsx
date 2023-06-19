@@ -1,34 +1,53 @@
+"use client";
 import React from 'react'
 import styles from '../styles/HorizontalCard.module.css'
+import BlogPage from './blogPage';
+import { useState } from 'react';
 
 
-export   const AllCards = () => {
-    const objects=[1,2,3,4,5,6,7,8,9,10,11];
+export   const AllCards = (props:any) => {
+  
 return (
   <div >
      <div className={styles.main1}>
   
-  {objects.map(i => { return (<HorizontalCards key={i} />) })}
+      {props.allPost.map((i:any) => { return (<HorizontalCards key={i.blogId} blog={ i} />) })}
    </div>
  </div>)
 }
 
 
-export  const HorizontalCards = () => {
+export const HorizontalCards = (props:any) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+ 
+
   return (
     
-          <div id={styles.main}>
+    <>
+      <div id={styles.main} onClick={handleClickOpen}>
          
-      <img src="https://images.pexels.com/photos/6331158/pexels-photo-6331158.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id={styles.image } />
-  
-  <div id={styles.text}>
-      <h4>A Cup of Jo is a lifestyle blog with tons of content about relationships, fashion</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ex labore?Alias, ex labore? elit. Alias, ex labore?Alias, ex labore?</p>
-      <hr />
-      <p><span>By: Nitya | </span>
-      <span>27 August,2022</span></p>
-  </div>
-</div>
+         <img src={props.blog.img} alt="" id={styles.image } />
+     
+     <div id={styles.text}>
+          <h4>{props.blog.title }</h4>
+         <p>{props.blog.description}</p>
+         <hr />
+         <p><span>By: Nitya | </span>
+         <span>27 August,2022</span></p>
+         </div>
+         
+      </div>
+      <BlogPage handleClose={ handleClose} open={open} blogId={props.blog.blogId} />
+    </>
   )
 }
 
